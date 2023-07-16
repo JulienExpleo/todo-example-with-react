@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
+}
+
+div#todoList {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+div#todoList header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px 25px;
+  align-items: center;
+}
+div#todoList .input {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #e0e0e0;
+  padding-block: 5px;
+}
+div#todoList .input input {
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+div#todoList .input input:focus {
+  outline: none;
+}
+div#todoList .input button {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid white;
+  padding-right: 5px;
+  font-size: 30px;
+  display: grid;
+  place-content: center;
+  margin-left: 5px;
+  color: black;
+  cursor: pointer;
+}
+div#todoList ul {
+  list-style-type: none;
+  padding: 10px 5px 0px;
+}
+div#todoList ul li {
+  border-bottom: 1px solid gainsboro;
+  padding-block: 7px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+div#todoList ul li button {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.549);
+}
+div#todoList ul li span {
+  word-break: break-all;
+}
+div#todoList ul li #checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+div#todoList ul li .completed {
+  text-decoration: line-through;
+}
+
+.empty-todo-box{
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.mt-1{
+  margin-top: 1em;
+}
