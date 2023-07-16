@@ -54,7 +54,7 @@ function TodoExplorer(){
         : [];
 
     return (
-        <div id="todoList">
+        <div id="todoList" className="mt-1">
             <TodoHeader completedTodos={completedTodos.length} allTodos={todos.length} />
             <div className="input mt-1">
                 <input
