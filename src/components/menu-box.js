@@ -5,9 +5,18 @@ function MenuBox(props){
 
     return (
         <div className="w-50 menu">
-            <div className="menu-item" onClick={() => props.changeAppContent(1)}>Todo App</div>
-            <div className="menu-item" onClick={() => props.changeAppContent(2)}>Tracking App</div>
-            <div className="menu-item" onClick={() => props.changeAppContent(3)}>Reporting App</div>
+            <div className="menu-item" onClick={() => props.changeAppContent(1)}>
+                Todo App
+            </div>
+            <div className="menu-item" onClick={() => props.changeAppContent(2)}>
+                Tracking App
+            </div>
+            <div className="menu-item" onClick={() => props.changeAppContent(3)}>
+                Reporting App
+            </div>
+            <div className="menu-item" onClick={() => props.changeAppContent(4)}>
+                Counter App
+            </div>
         </div>
     );
 };

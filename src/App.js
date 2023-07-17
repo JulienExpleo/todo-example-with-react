@@ -3,6 +3,7 @@ import TodoExplorer from "./components/todo/todo-explorer";
 import MenuBox from "./components/menu-box";
 import LogoBox from "./components/logo-box";
 import {useState} from "react";
+import {CounterBox} from "./components/counter/counter-box";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
   function renderContent(){
       return contentToShow === 1 ? <TodoExplorer/>
           : contentToShow === 2 ? <div className="mt-1">This is some Tracking content</div>
-              : <div className="mt-1">This is some reporting content</div>
+              : contentToShow === 4 ? <CounterBox/> : <div className="mt-1">This is some reporting content</div>
   }
 
     //Instead of changeAppContent, react router should be used for client routing.
